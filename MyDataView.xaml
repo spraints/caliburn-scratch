@@ -11,7 +11,9 @@
             <TextBox Text="{Binding Path=TheValue, Mode=TwoWay}" Width="200" />
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right">
+            <Button Name="Deactivate" Content="Deactivate" />
             <Button Name="Close" Content="Close" />
+            <Button Name="Shutdown" Content="Shutdown" />
         </WrapPanel>
     </StackPanel>
 </Window>
