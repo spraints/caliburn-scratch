@@ -23,14 +23,24 @@ namespace Scratch
             set { _model.TheValue = value; }
         }
 
-        public void ConfigurePresenter()
+        public void ConfigurePresenterWindow()
         {
             _windowManager.Show(_presenter);
         }
 
-        public void ConfigureObject()
+        public void ConfigureObjectWindow()
         {
             _windowManager.Show(_model);
+        }
+
+        public void ConfigurePresenterDialog()
+        {
+            _windowManager.ShowDialog(_presenter);
+        }
+
+        public void ConfigureObjectDialog()
+        {
+            _windowManager.ShowDialog(_model);
         }
     }
 }

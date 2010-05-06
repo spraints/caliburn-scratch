@@ -3,8 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Scratch Caliburn App" Height="300" Width="300">
     <StackPanel Margin="10,10,10,10">
-        <Button Name="ConfigurePresenter" Content="Configure Presenter" Margin="3" />
-        <Button Name="ConfigureObject" Content="Configure POCO" Margin="3" />
+        <WrapPanel HorizontalAlignment="Right">
+            <Label Content="Presenter" />
+            <Button Name="ConfigurePresenterWindow" Content="window" Margin="3" />
+            <Button Name="ConfigurePresenterDialog" Content="dialog" Margin="3" />
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Right">
+            <Label Content="POCO" />
+            <Button Name="ConfigureObjectWindow" Content="window" Margin="3" />
+            <Button Name="ConfigureObjectDialog" Content="dialog" Margin="3" />
+        </WrapPanel>
         <WrapPanel>
             <Label Content="The value:" />
             <Label Content="{Binding TheValue}" />
