@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Caliburn.Core;
 
 namespace Scratch
 {
-    class MyDataModel
+    public class MyDataModel : PropertyChangedBase
     {
+        private string _theValue = "TEST";
+        public string TheValue
+        {
+            get { return _theValue; }
+            set { _theValue = value; NotifyOfPropertyChange("TheValue"); }
+        }
     }
 }

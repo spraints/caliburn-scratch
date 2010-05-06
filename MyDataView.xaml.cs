@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Scratch
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MyDataView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MyDataView : UserControl
     {
-        public MainWindow()
+        public MyDataView()
         {
             InitializeComponent();
         }
