@@ -4,14 +4,24 @@
         Title="Scratch Caliburn App" Height="300" Width="300">
     <StackPanel Margin="10,10,10,10">
         <WrapPanel HorizontalAlignment="Right">
-            <Label Content="Presenter" />
+            <Label Content="Presenter, Window" />
             <Button Name="ConfigurePresenterWindow" Content="window" Margin="3" />
             <Button Name="ConfigurePresenterDialog" Content="dialog" Margin="3" />
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right">
-            <Label Content="POCO" />
+            <Label Content="POCO, Window" />
             <Button Name="ConfigureObjectWindow" Content="window" Margin="3" />
             <Button Name="ConfigureObjectDialog" Content="dialog" Margin="3" />
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Right">
+            <Label Content="Presenter, UserControl" />
+            <Button Name="ConfigurePresenterWindowUc" Content="window" Margin="3" />
+            <Button Name="ConfigurePresenterDialogUc" Content="dialog" Margin="3" />
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Right">
+            <Label Content="POCO, UserControl" />
+            <Button Name="ConfigureObjectWindowUc" Content="window" Margin="3" />
+            <Button Name="ConfigureObjectDialogUc" Content="dialog" Margin="3" />
         </WrapPanel>
         <WrapPanel>
             <Label Content="The value:" />

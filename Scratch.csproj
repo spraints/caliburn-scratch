@@ -75,6 +75,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ControlDataModel.cs" />
+    <Compile Include="ControlDataPresenter.cs" />
+    <Compile Include="ControlDataView.xaml.cs">
+      <DependentUpon>ControlDataView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyDataPresenter.cs" />
     <Compile Include="MyDataView.xaml.cs">
       <DependentUpon>MyDataView.xaml</DependentUpon>
@@ -111,6 +116,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ControlDataView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MyDataView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

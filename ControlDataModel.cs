@@ -1,11 +1,11 @@
-﻿using Caliburn.PresentationFramework.ApplicationModel;
+﻿using Caliburn.Core;
 
 namespace Scratch
 {
-    public class MyDataPresenter : Presenter
+    public class ControlDataModel : PropertyChangedBase
     {
         private MyDataModel _model;
-        public MyDataPresenter(MyDataModel model)
+        public ControlDataModel(MyDataModel model)
         {
             _model = model;
             _model.PropertyChanged += (s, e) => NotifyOfPropertyChange(e.PropertyName);

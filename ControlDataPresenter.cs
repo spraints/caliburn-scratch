@@ -2,10 +2,10 @@
 
 namespace Scratch
 {
-    public class MyDataPresenter : Presenter
+    public class ControlDataPresenter : Presenter
     {
         private MyDataModel _model;
-        public MyDataPresenter(MyDataModel model)
+        public ControlDataPresenter(MyDataModel model)
         {
             _model = model;
             _model.PropertyChanged += (s, e) => NotifyOfPropertyChange(e.PropertyName);

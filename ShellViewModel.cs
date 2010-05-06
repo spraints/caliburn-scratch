@@ -7,12 +7,16 @@ namespace Scratch
     {
         private readonly MyDataModel _model;
         private readonly MyDataPresenter _presenter;
+        private readonly ControlDataModel _modelUc;
+        private readonly ControlDataPresenter _presenterUc;
         private readonly IWindowManager _windowManager;
 
-        public ShellViewModel(MyDataModel model, MyDataPresenter presenter, IWindowManager windowManager)
+        public ShellViewModel(MyDataModel model, MyDataPresenter presenter, ControlDataModel modelUc, ControlDataPresenter presenterUc, IWindowManager windowManager)
         {
             _model = model;
             _presenter = presenter;
+            _modelUc = modelUc;
+            _presenterUc = presenterUc;
             _windowManager = windowManager;
             _model.PropertyChanged += (s, e) => NotifyOfPropertyChange(e.PropertyName);
         }
@@ -41,6 +45,26 @@ namespace Scratch
         public void ConfigureObjectDialog()
         {
             _windowManager.ShowDialog(_model);
+        }
+
+        public void ConfigurePresenterWindowUc()
+        {
+            _windowManager.Show(_presenterUc);
+        }
+
+        public void ConfigureObjectWindowUc()
+        {
+            _windowManager.Show(_modelUc);
+        }
+
+        public void ConfigurePresenterDialogUc()
+        {
+            _windowManager.ShowDialog(_presenterUc);
+        }
+
+        public void ConfigureObjectDialogUc()
+        {
+            _windowManager.ShowDialog(_modelUc);
         }
     }
 }

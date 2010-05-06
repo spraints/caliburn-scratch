@@ -10,5 +10,10 @@ namespace Scratch
             get { return _theValue; }
             set { _theValue = value; NotifyOfPropertyChange("TheValue"); }
         }
+
+        public void DoSomethingCustom()
+        {
+            System.Windows.MessageBox.Show("It works!");
+        }
     }
 }
