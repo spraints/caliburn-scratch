@@ -1,8 +1,5 @@
-﻿<Application x:Class="Scratch.App"
+﻿<cal:CaliburnApplication x:Class="Scratch.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
+             xmlns:cal="http://www.caliburnproject.org">
+</cal:CaliburnApplication>
