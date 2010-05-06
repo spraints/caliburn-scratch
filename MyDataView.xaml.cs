@@ -17,7 +17,7 @@ namespace Scratch
     /// <summary>
     /// Interaction logic for MyDataView.xaml
     /// </summary>
-    public partial class MyDataView : UserControl
+    public partial class MyDataView : Window
     {
         public MyDataView()
         {
