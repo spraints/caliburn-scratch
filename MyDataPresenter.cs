@@ -21,5 +21,10 @@ namespace Scratch
         {
             System.Windows.MessageBox.Show("It works!");
         }
+
+        public void DoAnotherThing(SomeRandomThing thing, object x)
+        {
+            System.Windows.MessageBox.Show((thing == null ? "NULL!" : thing.Name) + "\r\n" + x);
+        }
     }
 }

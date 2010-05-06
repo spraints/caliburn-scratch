@@ -12,6 +12,7 @@
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right">
             <Button Name="DoSomethingCustom" Content="Custom Binding" />
+            <Button Name="DoAnotherThing" Content="Custom Binding with a parameter" />
             <Button Name="Deactivate" Content="Deactivate" />
             <Button Name="Close" Content="Close" />
             <Button Name="Shutdown" Content="Shutdown" />

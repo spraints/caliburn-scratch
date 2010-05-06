@@ -88,6 +88,7 @@
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ShellViewModel.cs" />
+    <Compile Include="SomeRandomThing.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyDataModel.cs" />

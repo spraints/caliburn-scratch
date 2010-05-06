@@ -1,27 +1,27 @@
 ﻿<Window x:Class="Scratch.ShellView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Scratch Caliburn App" Height="300" Width="300">
+        Title="Scratch Caliburn App" Height="300" Width="400">
     <StackPanel Margin="10,10,10,10">
         <WrapPanel HorizontalAlignment="Right">
-            <Label Content="Presenter, Window" />
-            <Button Name="ConfigurePresenterWindow" Content="window" Margin="3" />
-            <Button Name="ConfigurePresenterDialog" Content="dialog" Margin="3" />
+            <Label Content="Presenter with Window view" />
+            <Button Name="ConfigurePresenterWindow" Content="Show()" Margin="3" />
+            <Button Name="ConfigurePresenterDialog" Content="ShowDialog()" Margin="3" />
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right">
-            <Label Content="POCO, Window" />
-            <Button Name="ConfigureObjectWindow" Content="window" Margin="3" />
-            <Button Name="ConfigureObjectDialog" Content="dialog" Margin="3" />
+            <Label Content="POCO with Window view" />
+            <Button Name="ConfigureObjectWindow" Content="Show()" Margin="3" />
+            <Button Name="ConfigureObjectDialog" Content="ShowDialog()" Margin="3" />
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right">
-            <Label Content="Presenter, UserControl" />
-            <Button Name="ConfigurePresenterWindowUc" Content="window" Margin="3" />
-            <Button Name="ConfigurePresenterDialogUc" Content="dialog" Margin="3" />
+            <Label Content="Presenter with UserControl view" />
+            <Button Name="ConfigurePresenterWindowUc" Content="Show()" Margin="3" />
+            <Button Name="ConfigurePresenterDialogUc" Content="ShowDialog()" Margin="3" />
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right">
-            <Label Content="POCO, UserControl" />
-            <Button Name="ConfigureObjectWindowUc" Content="window" Margin="3" />
-            <Button Name="ConfigureObjectDialogUc" Content="dialog" Margin="3" />
+            <Label Content="POCO with UserControl view" />
+            <Button Name="ConfigureObjectWindowUc" Content="Show()" Margin="3" />
+            <Button Name="ConfigureObjectDialogUc" Content="ShowDialog()" Margin="3" />
         </WrapPanel>
         <WrapPanel>
             <Label Content="The value:" />
